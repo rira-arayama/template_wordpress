@@ -37,13 +37,5 @@ services:
       DB_HOST: db
       WP_DEBUG: 1
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    restart: always
-    depends_on:
-      - db
-    ports:
-      - 8888:80
-
 volumes:
   db_data:
